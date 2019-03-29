@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "e5106454-bca6-4120-a541-2a6e8bb50bcb",
+		"name": "Radio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/playlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"playlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Parameterised playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/playlist/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"playlist",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Playlist by duration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/playlist/shortest/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"playlist",
+						"shortest",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

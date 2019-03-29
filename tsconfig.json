@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "esnext",
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": false,
+        "resolveJsonModule": true,
+        "alwaysStrict": true,
+        "suppressExcessPropertyErrors": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "./",
+        "removeComments": true,
+        "lib": ["es6", "es2017"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "paths": {
+            "controllers/*": ["src/controllers/*"],
+            "handlers/*": ["src/handlers/*"],
+            "libs/*": ["src/libs/*"],
+            "datatypes/*": ["src/datatypes/*"],
+        }
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/*.js.map": true
+    }
+}

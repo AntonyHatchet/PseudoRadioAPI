@@ -1,0 +1,50 @@
+{
+  "name": "radio",
+  "version": "1.0.0",
+  "description": "Node.js Technical Test",
+  "main": "server.js",
+  "author": "Anton Gorshenin",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "prestart": "rm -rf ./dist && ./node_modules/.bin/tslint && ./node_modules/.bin/tsc",
+    "start:dev": "tsc-watch --onSuccess 'node ./dist/server.js' --onFailure 'echo Beep!Compilation Failed' --compiler typescript/bin/tsc",
+    "build": "./node_modules/.bin/tsc",
+    "prebuild": "rm -rf ./dist && ./node_modules/.bin/tslint -c ./tslint.json src/**/*.ts",
+    "test": "mocha -t 10000 -r ts-node/register -r source-map-support/register -r dotenv/config src/**/*.test.ts"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0",
+    "koa": "^2.7.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.4.0",
+    "typescript": "^3.3.4000",
+    "winston": "^3.2.1",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/dotenv": "^6.1.0",
+    "@types/koa": "^2.0.48",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-router": "^7.0.40",
+    "@types/mocha": "^5.2.6",
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^11.12.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "module-alias": "^2.2.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.3",
+    "tsc-watch": "^2.1.2",
+    "tslint": "^5.14.0",
+    "xml-js": "^1.6.11"
+  },
+  "_moduleAliases": {
+    "controllers": "dist/controllers",
+    "handlers": "dist/handlers",
+    "libs": "dist/libs",
+    "datatypes": "dist/datatypes"
+  }
+}
