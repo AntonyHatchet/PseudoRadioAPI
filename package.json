@@ -1,10 +1,10 @@
 {
-  "name": "radio",
+  "name": "pseudoradioapi",
   "version": "1.0.0",
   "description": "Node.js Technical Test",
-  "main": "server.js",
   "author": "Anton Gorshenin",
   "license": "MIT",
+  repository": "git@github.com:AntonyHatchet/PseudoRadioAPI.git",
   "scripts": {
     "start": "node ./dist/server.js",
     "prestart": "rm -rf ./dist && ./node_modules/.bin/tslint && ./node_modules/.bin/tsc",
@@ -43,7 +43,6 @@
   },
   "_moduleAliases": {
     "controllers": "dist/controllers",
-    "handlers": "dist/handlers",
     "libs": "dist/libs",
     "datatypes": "dist/datatypes"
   }
