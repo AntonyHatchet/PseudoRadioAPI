@@ -1,4 +1,4 @@
-# rickandmorty
+# Pseudo Radio API
 
 Challenge project for draewil
 
