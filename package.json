@@ -4,7 +4,7 @@
   "description": "Node.js Technical Test",
   "author": "Anton Gorshenin",
   "license": "MIT",
-  repository": "git@github.com:AntonyHatchet/PseudoRadioAPI.git",
+  "repository": "git@github.com:AntonyHatchet/PseudoRadioAPI.git",
   "scripts": {
     "start": "node ./dist/server.js",
     "prestart": "rm -rf ./dist && ./node_modules/.bin/tslint && ./node_modules/.bin/tsc",
